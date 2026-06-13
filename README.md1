@@ -10,6 +10,8 @@ npm link
 npm install -g opencode-ai
 
 option 2
+
+pkg install proot-distro -y
 proot-distro install alpine
 proot-distro login alpine
 apk update
