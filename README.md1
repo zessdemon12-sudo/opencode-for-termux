@@ -1,0 +1,10 @@
+pkg install proot-distro -y
+proot-distro install debian
+proot-distro login debian
+apt update && apt install -y curl
+curl -fsSL https://nodesource.com | bash -
+apt install -y nodejs git build-essential
+apt update && apt install -y git nodejs npm
+npm install
+npm link
+npm install -g opencode-ai
