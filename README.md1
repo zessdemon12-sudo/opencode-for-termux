@@ -19,3 +19,33 @@ apk add --no-cache nodejs npm git build-base
 apk update && apk add --no-cache git
 nodejs npm build-base
 npm install -g opencode-ai
+
+or
+
+For Alpine Linux, the equivalent of:
+
+apt update && apt install -y git nodejs npm
+
+is:
+
+apk update && apk add --no-cache git nodejs npm
+
+If you also need compiler tools (equivalent to Debian's build-essential):
+
+apk update && apk add --no-cache git nodejs npm build-base
+
+To check that everything installed correctly:
+
+node -v
+npm -v
+git --version
+
+If you're trying to install OpenCode on Alpine, you can then run:
+
+npm install -g opencode-ai
+
+or
+
+npx opencode-ai
+
+depending on how you want to use it.
