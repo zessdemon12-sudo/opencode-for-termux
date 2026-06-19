@@ -15,8 +15,7 @@ pkg install proot-distro -y
 proot-distro install alpine
 proot-distro login alpine
 apk update
-apk add --no-cache nodejs npm git bui
-ld-base
+apk add --no-cache nodejs npm git build-base
 apk update && apk add --no-cache git
 nodejs npm build-base
 npm install -g opencode-ai
